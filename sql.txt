@@ -1,0 +1,20 @@
+﻿CREATE TABLE [dbo].[UserTable] (
+    [Id]       INT          IDENTITY (1, 1) NOT NULL,
+    [UName]    VARCHAR (50) NULL,
+    [EmailId]  VARCHAR (50) NULL,
+    [Mobile]   VARCHAR (50) NULL,
+    [Password] VARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[ExpTable] (
+    [Id]      INT          IDENTITY (1, 1) NOT NULL,
+    [PDate]   VARCHAR (50) NULL,
+    [Credit]  MONEY        NULL,
+    [Debit]   MONEY        NULL,
+    [Balance] MONEY        NULL,
+    [Month]   INT          NULL,
+    [Year]    INT          NULL,
+    [UserId]  INT          NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
